@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  <center>
+  <h2 class="btn btn-default heading">Web Image Recognition Model</h2>
+    <br>
+    <h3 id="objective">This model is trained to recognise real life objects such as pen, notebook, cup and
+      binoculars.Have fun!</h3>
+    <b class="objects">
+      Cup
+      <hr class="hr">
+      Pen
+      <hr class="hr">
+      Notebook
+      <hr class="hr">
+      Binoculars
+    </b>
+    <h4 style="font-size: 15px;">Your webcam :-</h4><br>
+    <div id="webcam"></div>
+
+    <h4 style="font-size: 15px;">Preview :-</h4><br>
+    <div id="preview"></div>
+
+    <button onclick="take_snapshot()" class="btn btn-success">Take Snapshot</button><br><br>
+    <button onclick="check()" class="btn btn-info">Identify Image</button>
+    <p style="font-size: 15px;">Output :<span id="output"></span></p>
+    <p style="font-size: 15px;">Accuracy Level :<span id="accuracy"></span></p>
+    </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

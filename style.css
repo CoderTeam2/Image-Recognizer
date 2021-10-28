@@ -1,0 +1,13 @@
+body{
+    background-color: aquamarine;
+}
+.hr{
+    width: 50%;
+}
+.heading{
+    width: 50%;
+    font-size: 20px;
+    font: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkgreen;
+}
